@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">L\'amphitryon</string>
+    <string name="spinner_hint_table">Sélectionnez une table</string>
+    <string name="spinner_hint_service">Sélectionnez un service</string>
+</resources>

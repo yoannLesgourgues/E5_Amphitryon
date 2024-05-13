@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textViewEditCommande"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:text = "Menu d'édition d'un plat"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textViewPlatEdit"
+        android:layout_width="167dp"
+        android:layout_height="22dp"
+        android:layout_margin="30dp"
+        android:text="Sélectionnez un plat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewEditCommande" />
+
+    <Spinner
+        android:id="@+id/spinnerPlatEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPlatEdit" />
+
+    <TextView
+        android:id="@+id/textViewInfosCompEdit"
+        android:layout_width="240dp"
+        android:layout_height="22dp"
+        android:layout_margin="30dp"
+        android:text="Insérez les infos complémentaires"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPlatEdit" />
+
+    <EditText
+        android:id="@+id/editTextInfosCompEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Informations complémentaires"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewInfosCompEdit" />
+
+    <TextView
+        android:id="@+id/textViewQuantiteEdit"
+        android:layout_width="240dp"
+        android:layout_height="22dp"
+        android:layout_margin="30dp"
+        android:text="Insérez la quantité"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextInfosCompEdit" />
+
+    <EditText
+        android:id="@+id/editTextQuantiteEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Quantité"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewQuantiteEdit" />
+
+    <TextView
+        android:id="@+id/textViewEtatEdit"
+        android:layout_width="167dp"
+        android:layout_height="22dp"
+        android:layout_margin="30dp"
+        android:text="Sélectionnez un état"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextQuantiteEdit" />
+
+    <Spinner
+        android:id="@+id/spinnerEtatEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewEtatEdit" />
+
+    <Button
+        android:id="@+id/buttonValiderEditPlat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="VALIDER"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerEtatEdit" />
+
+    <Button
+        android:id="@+id/buttonQuitterEditPlat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="QUITTER"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerEtatEdit" />
+
+    <Button
+        android:id="@+id/buttonSupprimerPlat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Supprimer le plat"
+        app:layout_constraintTop_toBottomOf="@id/buttonQuitterEditPlat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
